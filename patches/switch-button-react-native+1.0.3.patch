@@ -1,0 +1,161 @@
+diff --git a/node_modules/switch-button-react-native/index.d.ts b/node_modules/switch-button-react-native/index.d.ts
+new file mode 100644
+index 0000000..0564be2
+--- /dev/null
++++ b/node_modules/switch-button-react-native/index.d.ts
+@@ -0,0 +1,22 @@
++import React from 'react';
++
++export interface ISwitchButton {
++  onValueChange: (activeSwitch: number) => void;
++  text1?: string;
++  text2?: string;
++  switchHeight?: number;
++  switchWidth?: number;
++  switchBorderRadius?: number;
++  switchSpeedChange?: number;
++  switchBorderColor?: string;
++  switchBackgroundColor?: string;
++  switchdirection?: FlexStyle['flexDirection'];
++  btnBorderColor?: string;
++  btnBackgroundColor?: string;
++  activeFontColor?: string;
++  fontColor?: string;
++  children?: React.ReactNode;
++}
++
++class SwitchButton extends React.Component<ISwitchButton> {}
++export default SwitchButton;
+\ No newline at end of file
+diff --git a/node_modules/switch-button-react-native/SwitchButton.js b/node_modules/switch-button-react-native/index.js
+similarity index 80%
+rename from node_modules/switch-button-react-native/SwitchButton.js
+rename to node_modules/switch-button-react-native/index.js
+index 1a9110a..1ec9c30 100644
+--- a/node_modules/switch-button-react-native/SwitchButton.js
++++ b/node_modules/switch-button-react-native/index.js
+@@ -95,7 +95,7 @@ export default class SwitchButton extends Component {
+         return dir;
+     }
+ 
+-    _switchThump(direction) {
++    _switchThump(direction, state) {
+         const { onValueChange, disabled } = this.props;
+         let dirsign = 1;
+         if (direction === 'rtl') {
+@@ -104,25 +104,26 @@ export default class SwitchButton extends Component {
+         else {
+             dirsign = 1;
+         }
++        this.setState({ activeSwitch: state }, () => onValueChange(state));
+         
+-        if (this.state.activeSwitch === 1){
+-            this.setState({ activeSwitch: 2 }, () => onValueChange(this.state.activeSwitch));
++        if (state === 2){
+ 
+             Animated.timing(
+                 this.state.offsetX,
+                     {
+-                        toValue: (((this.props.switchWidth || this.state.sbWidth) / 2) - 6) * dirsign,
+-                        duration: this.props.switchSpeedChange || 100
++                        toValue: (((this.props.switchWidth || this.state.sbWidth) / 2) - 2) * dirsign,
++                        duration: this.props.switchSpeedChange || 100,
++                        useNativeDriver: true,
+                     }
+             ).start();
+         }
+         else {
+-            this.setState({ activeSwitch: 1 }, () => onValueChange(this.state.activeSwitch));
+             Animated.timing(
+                 this.state.offsetX,
+                     {
+                         toValue: 0,
+-                        duration: this.props.switchSpeedChange || 100
++                        duration: this.props.switchSpeedChange || 100,
++                        useNativeDriver: true,
+                     }
+             ).start();
+         }
+@@ -134,7 +135,7 @@ export default class SwitchButton extends Component {
+         return (
+ 
+                 <View>
+-                <TouchableOpacity activeOpacity={1} onPress={ () => { this._switchThump(this.props.switchdirection || this.state.direction) } }>
++                
+                     <View
+                         style={[{
+                                 width: this.props.switchWidth || this.state.sbWidth,
+@@ -151,8 +152,8 @@ export default class SwitchButton extends Component {
+                                     <View
+                                         style={[switchStyles.wayBtnActive,
+                                                 {
+-                                                    width: this.props.switchWidth / 2 || this.state.sbWidth / 2,
+-                                                    height: this.props.switchHeight - 6 || this.state.sbHeight - 6,
++                                                    width: this.props.switchWidth / 2.3 || this.state.sbWidth / 2.3,
++                                                    height: this.props.switchHeight - 14 || this.state.sbHeight - 14,
+                                                     borderRadius: this.props.switchBorderRadius !== undefined ? this.props.switchBorderRadius : this.state.sbHeight / 2,
+                                                     borderColor: this.props.btnBorderColor || "#00a4b9",
+                                                     backgroundColor: this.props.btnBackgroundColor || "#00bcd4"
+@@ -160,6 +161,7 @@ export default class SwitchButton extends Component {
+                                     />
+                                 </Animated.View>
+                                 
++
+                                 <View style={[switchStyles.textPos,
+                                                 {
+                                                     width: this.props.switchWidth / 2 || this.state.sbWidth / 2,
+@@ -167,27 +169,31 @@ export default class SwitchButton extends Component {
+                                                     left: 0
+                                                 }]}
+                                 >
+-                                    <Text style={[ this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
++                                    <TouchableOpacity activeOpacity={1} onPress={ () => { this._switchThump(this.props.switchdirection || this.state.direction, 1) } }>
++                                        <Text style={[switchStyles.text, this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
+                                         { this.props.text1 || 'ON' }
+-                                    </Text>
++                                        </Text>
++                                    </TouchableOpacity>
+                                 </View>
+ 
++                        
+                                 <View
+                                     style={[switchStyles.textPos,
+                                             {
+                                                 width: this.props.switchWidth / 2 || this.state.sbWidth / 2,
+                                                 height: this.props.switchHeight - 6 || this.state.sbHeight - 6,
+-                                                right:0
++                                                right: 0
+                                             }]}
+                                 >
+-                                    <Text style={[ this.state.activeSwitch === 2 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
+-                                    { this.props.text2 || 'OFF' }
+-                                    </Text>
++                                    <TouchableOpacity activeOpacity={1} onPress={ () => { this._switchThump(this.props.switchdirection || this.state.direction, 2) } }>
++                                        <Text style={[switchStyles.text, this.state.activeSwitch === 2 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
++                                        { this.props.text2 || 'OFF' }
++                                        </Text>
++                                    </TouchableOpacity>
+                                 </View>
+                             </View>
+ 
+                     </View>
+-                    </TouchableOpacity>
+                     { this.props.children } 
+                 </View>
+ 
+@@ -210,9 +216,12 @@ const switchStyles = StyleSheet.create({
+     },
+     wayBtnActive: {
+         borderWidth: 1,
+-        marginTop: 2,
+-        marginRight: 2,
+-        marginLeft: 2
++        marginTop: 6,
++        marginRight: 6,
++        marginLeft: 6
++    },
++    text: {
++        fontSize: 16,
+     }
+ 
+   });
