@@ -1,8 +1,8 @@
-diff --git a/node_modules/switch-button-react-native/index.d.ts b/node_modules/switch-button-react-native/index.d.ts
+diff --git a/node_modules/switch-button-react-native/SwitchButton.d.ts b/node_modules/switch-button-react-native/SwitchButton.d.ts
 new file mode 100644
 index 0000000..0564be2
 --- /dev/null
-+++ b/node_modules/switch-button-react-native/index.d.ts
++++ b/node_modules/switch-button-react-native/SwitchButton.d.ts
 @@ -0,0 +1,22 @@
 +import React from 'react';
 +
@@ -27,13 +27,10 @@ index 0000000..0564be2
 +class SwitchButton extends React.Component<ISwitchButton> {}
 +export default SwitchButton;
 \ No newline at end of file
-diff --git a/node_modules/switch-button-react-native/SwitchButton.js b/node_modules/switch-button-react-native/index.js
-similarity index 80%
-rename from node_modules/switch-button-react-native/SwitchButton.js
-rename to node_modules/switch-button-react-native/index.js
-index 1a9110a..1ec9c30 100644
+diff --git a/node_modules/switch-button-react-native/SwitchButton.js b/node_modules/switch-button-react-native/SwitchButton.js
+index 1a9110a..d6d7786 100644
 --- a/node_modules/switch-button-react-native/SwitchButton.js
-+++ b/node_modules/switch-button-react-native/index.js
++++ b/node_modules/switch-button-react-native/SwitchButton.js
 @@ -95,7 +95,7 @@ export default class SwitchButton extends Component {
          return dir;
      }
@@ -48,7 +45,7 @@ index 1a9110a..1ec9c30 100644
              dirsign = 1;
          }
 +        this.setState({ activeSwitch: state }, () => onValueChange(state));
-         
+ 
 -        if (this.state.activeSwitch === 1){
 -            this.setState({ activeSwitch: 2 }, () => onValueChange(this.state.activeSwitch));
 +        if (state === 2){
@@ -99,7 +96,7 @@ index 1a9110a..1ec9c30 100644
 @@ -160,6 +161,7 @@ export default class SwitchButton extends Component {
                                      />
                                  </Animated.View>
-                                 
+ 
 +
                                  <View style={[switchStyles.textPos,
                                                  {

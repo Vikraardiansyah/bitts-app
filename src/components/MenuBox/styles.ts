@@ -2,24 +2,27 @@ import { StyleSheet } from 'react-native';
 import color from '../../color';
 
 const styles = StyleSheet.create({
-  menuContainer: {
-    alignItems: 'center',
-  },
   acticeMenuBox: {
+    backgroundColor: color.black,
     borderRadius: 50,
-    padding: 16,
+    paddingVertical: 16,
+    paddingHorizontal: 24,
     marginHorizontal: 8,
   },
   inActiceMenuBox: {
+    backgroundColor: color.lightGray,
     borderRadius: 50,
-    padding: 16,
+    paddingVertical: 16,
+    paddingHorizontal: 24,
     marginHorizontal: 8,
   },
   activeMenuText: {
-    color: color.grayText,
+    fontSize: 20,
+    color: color.whiteText,
   },
   inActiceMenuText: {
-    color: color.whiteText,
+    fontSize: 20,
+    color: color.grayText,
   },
 });
 

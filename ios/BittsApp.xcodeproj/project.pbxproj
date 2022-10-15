@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BittsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BittsAppTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-BittsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-BittsApp.a */; };
+		0F0AC516749C4F5985805C32 /* Helvetica Neue W01 66 Medium It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9228AFA965426BAD29218E /* Helvetica Neue W01 66 Medium It.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2C5E7E897E2B49228DF6C6F5 /* Helvetica Neue W01 66 Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 615CBD853F58496DBBBB4D99 /* Helvetica Neue W01 66 Medium It.otf */; };
+		390739A43A2846E1B12A2BEB /* Helvetica NeueLTW0693BlkExtObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73EB46378B2945B191FE3DDC /* Helvetica NeueLTW0693BlkExtObl.otf */; };
+		64CD6E2BB172412393C5622E /* Helvetica Neue LTW0697BlkCnObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DB70C2BE5504C0A8006F7E9 /* Helvetica Neue LTW0697BlkCnObl.otf */; };
 		7699B88040F8A987B510C191 /* libPods-BittsApp-BittsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BittsApp-BittsAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		64CD6E2BB172412393C5622E /* Helvetica Neue LTW0697BlkCnObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DB70C2BE5504C0A8006F7E9 /* Helvetica Neue LTW0697BlkCnObl.otf */; };
-		CB45877C349B49F2ABBCBEBA /* Helvetica Neue Medium Extended.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9F396DABE944C4290347805 /* Helvetica Neue Medium Extended.otf */; };
-		D6F2CC7C21B84BE88EA117D1 /* Helvetica Neue UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A792F781EF87486B9BD59CE3 /* Helvetica Neue UltraLight.otf */; };
-		2C5E7E897E2B49228DF6C6F5 /* Helvetica Neue W01 66 Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 615CBD853F58496DBBBB4D99 /* Helvetica Neue W01 66 Medium It.otf */; };
-		C6F98981EB1241808C8EF6A0 /* Helvetica Neue W01 77 Bd Cn Obl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA54792F98541EDB2224DF2 /* Helvetica Neue W01 77 Bd Cn Obl.otf */; };
 		96B1F2AAD1C441649DFA86F3 /* Helvetica Neue W01 87 Hv Cn Obl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 87F9D3DC5643474D94EBA040 /* Helvetica Neue W01 87 Hv Cn Obl.otf */; };
-		390739A43A2846E1B12A2BEB /* Helvetica NeueLTW0693BlkExtObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73EB46378B2945B191FE3DDC /* Helvetica NeueLTW0693BlkExtObl.otf */; };
-		EDCD5195410F4C66A67DC299 /* Helvetica Neue LTW0697BlkCnObl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 219349377B55480B9A549F93 /* Helvetica Neue LTW0697BlkCnObl.ttf */; };
-		C82A92FFB29646D69A081AFE /* Helvetica Neue Medium Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD3B89347D4C4408A10D59FC /* Helvetica Neue Medium Extended.ttf */; };
-		BB348F494DBC4536A531825B /* Helvetica Neue UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 986C8D42EF6A45BB9098277C /* Helvetica Neue UltraLight.ttf */; };
-		0F0AC516749C4F5985805C32 /* Helvetica Neue W01 66 Medium It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9228AFA965426BAD29218E /* Helvetica Neue W01 66 Medium It.ttf */; };
-		AE6C35F28EC049E0ACB12AF9 /* Helvetica Neue W01 77 Bd Cn Obl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D09A933EF29E4DF9AEAD970C /* Helvetica Neue W01 77 Bd Cn Obl.ttf */; };
 		9C657D9AEBC4419091FE99D0 /* Helvetica Neue W01 87 Hv Cn Obl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D85E2AC7CE347068CCA4D99 /* Helvetica Neue W01 87 Hv Cn Obl.ttf */; };
+		AE6C35F28EC049E0ACB12AF9 /* Helvetica Neue W01 77 Bd Cn Obl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D09A933EF29E4DF9AEAD970C /* Helvetica Neue W01 77 Bd Cn Obl.ttf */; };
+		BB348F494DBC4536A531825B /* Helvetica Neue UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 986C8D42EF6A45BB9098277C /* Helvetica Neue UltraLight.ttf */; };
+		C6F98981EB1241808C8EF6A0 /* Helvetica Neue W01 77 Bd Cn Obl.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA54792F98541EDB2224DF2 /* Helvetica Neue W01 77 Bd Cn Obl.otf */; };
+		C82A92FFB29646D69A081AFE /* Helvetica Neue Medium Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD3B89347D4C4408A10D59FC /* Helvetica Neue Medium Extended.ttf */; };
+		CB45877C349B49F2ABBCBEBA /* Helvetica Neue Medium Extended.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9F396DABE944C4290347805 /* Helvetica Neue Medium Extended.otf */; };
 		D33EAD1EBC954D6D9BD3C566 /* Helvetica NeueLTW0693BlkExtObl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8F0FA520A93431B809D997B /* Helvetica NeueLTW0693BlkExtObl.ttf */; };
+		D6F2CC7C21B84BE88EA117D1 /* Helvetica Neue UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A792F781EF87486B9BD59CE3 /* Helvetica Neue UltraLight.otf */; };
+		EDCD5195410F4C66A67DC299 /* Helvetica Neue LTW0697BlkCnObl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 219349377B55480B9A549F93 /* Helvetica Neue LTW0697BlkCnObl.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,27 +51,27 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BittsApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BittsApp/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-BittsApp-BittsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BittsApp-BittsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA54792F98541EDB2224DF2 /* Helvetica Neue W01 77 Bd Cn Obl.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue W01 77 Bd Cn Obl.otf"; path = "../assets/fonts/Helvetica Neue W01 77 Bd Cn Obl/Helvetica Neue W01 77 Bd Cn Obl.otf"; sourceTree = "<group>"; };
+		219349377B55480B9A549F93 /* Helvetica Neue LTW0697BlkCnObl.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue LTW0697BlkCnObl.ttf"; path = "../assets/fonts/Helvetica Neue LTW0697BlkCnObl/Helvetica Neue LTW0697BlkCnObl.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-BittsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittsApp.debug.xcconfig"; path = "Target Support Files/Pods-BittsApp/Pods-BittsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D85E2AC7CE347068CCA4D99 /* Helvetica Neue W01 87 Hv Cn Obl.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue W01 87 Hv Cn Obl.ttf"; path = "../assets/fonts/Helvetica Neue W01 87 Hv Cn Obl/Helvetica Neue W01 87 Hv Cn Obl.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-BittsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittsApp.release.xcconfig"; path = "Target Support Files/Pods-BittsApp/Pods-BittsApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-BittsApp-BittsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittsApp-BittsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BittsApp-BittsAppTests/Pods-BittsApp-BittsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-BittsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BittsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		615CBD853F58496DBBBB4D99 /* Helvetica Neue W01 66 Medium It.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue W01 66 Medium It.otf"; path = "../assets/fonts/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.otf"; sourceTree = "<group>"; };
+		6DB70C2BE5504C0A8006F7E9 /* Helvetica Neue LTW0697BlkCnObl.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue LTW0697BlkCnObl.otf"; path = "../assets/fonts/Helvetica Neue LTW0697BlkCnObl/Helvetica Neue LTW0697BlkCnObl.otf"; sourceTree = "<group>"; };
+		73EB46378B2945B191FE3DDC /* Helvetica NeueLTW0693BlkExtObl.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica NeueLTW0693BlkExtObl.otf"; path = "../assets/fonts/Helvetica NeueLTW0693BlkExtObl/Helvetica NeueLTW0693BlkExtObl.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BittsApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87F9D3DC5643474D94EBA040 /* Helvetica Neue W01 87 Hv Cn Obl.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue W01 87 Hv Cn Obl.otf"; path = "../assets/fonts/Helvetica Neue W01 87 Hv Cn Obl/Helvetica Neue W01 87 Hv Cn Obl.otf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BittsApp-BittsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittsApp-BittsAppTests.release.xcconfig"; path = "Target Support Files/Pods-BittsApp-BittsAppTests/Pods-BittsApp-BittsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		986C8D42EF6A45BB9098277C /* Helvetica Neue UltraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue UltraLight.ttf"; path = "../assets/fonts/Helvetica Neue UltraLight/Helvetica Neue UltraLight.ttf"; sourceTree = "<group>"; };
+		9B9228AFA965426BAD29218E /* Helvetica Neue W01 66 Medium It.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue W01 66 Medium It.ttf"; path = "../assets/fonts/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.ttf"; sourceTree = "<group>"; };
+		A792F781EF87486B9BD59CE3 /* Helvetica Neue UltraLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue UltraLight.otf"; path = "../assets/fonts/Helvetica Neue UltraLight/Helvetica Neue UltraLight.otf"; sourceTree = "<group>"; };
+		A8F0FA520A93431B809D997B /* Helvetica NeueLTW0693BlkExtObl.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica NeueLTW0693BlkExtObl.ttf"; path = "../assets/fonts/Helvetica NeueLTW0693BlkExtObl/Helvetica NeueLTW0693BlkExtObl.ttf"; sourceTree = "<group>"; };
+		A9F396DABE944C4290347805 /* Helvetica Neue Medium Extended.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue Medium Extended.otf"; path = "../assets/fonts/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.otf"; sourceTree = "<group>"; };
+		BD3B89347D4C4408A10D59FC /* Helvetica Neue Medium Extended.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue Medium Extended.ttf"; path = "../assets/fonts/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf"; sourceTree = "<group>"; };
+		D09A933EF29E4DF9AEAD970C /* Helvetica Neue W01 77 Bd Cn Obl.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neue W01 77 Bd Cn Obl.ttf"; path = "../assets/fonts/Helvetica Neue W01 77 Bd Cn Obl/Helvetica Neue W01 77 Bd Cn Obl.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		6DB70C2BE5504C0A8006F7E9 /* Helvetica Neue LTW0697BlkCnObl.otf */ = {isa = PBXFileReference; name = "Helvetica Neue LTW0697BlkCnObl.otf"; path = "../assets/fonts/Helvetica Neue LTW0697BlkCnObl/Helvetica Neue LTW0697BlkCnObl.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A9F396DABE944C4290347805 /* Helvetica Neue Medium Extended.otf */ = {isa = PBXFileReference; name = "Helvetica Neue Medium Extended.otf"; path = "../assets/fonts/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A792F781EF87486B9BD59CE3 /* Helvetica Neue UltraLight.otf */ = {isa = PBXFileReference; name = "Helvetica Neue UltraLight.otf"; path = "../assets/fonts/Helvetica Neue UltraLight/Helvetica Neue UltraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		615CBD853F58496DBBBB4D99 /* Helvetica Neue W01 66 Medium It.otf */ = {isa = PBXFileReference; name = "Helvetica Neue W01 66 Medium It.otf"; path = "../assets/fonts/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1FA54792F98541EDB2224DF2 /* Helvetica Neue W01 77 Bd Cn Obl.otf */ = {isa = PBXFileReference; name = "Helvetica Neue W01 77 Bd Cn Obl.otf"; path = "../assets/fonts/Helvetica Neue W01 77 Bd Cn Obl/Helvetica Neue W01 77 Bd Cn Obl.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		87F9D3DC5643474D94EBA040 /* Helvetica Neue W01 87 Hv Cn Obl.otf */ = {isa = PBXFileReference; name = "Helvetica Neue W01 87 Hv Cn Obl.otf"; path = "../assets/fonts/Helvetica Neue W01 87 Hv Cn Obl/Helvetica Neue W01 87 Hv Cn Obl.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		73EB46378B2945B191FE3DDC /* Helvetica NeueLTW0693BlkExtObl.otf */ = {isa = PBXFileReference; name = "Helvetica NeueLTW0693BlkExtObl.otf"; path = "../assets/fonts/Helvetica NeueLTW0693BlkExtObl/Helvetica NeueLTW0693BlkExtObl.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		219349377B55480B9A549F93 /* Helvetica Neue LTW0697BlkCnObl.ttf */ = {isa = PBXFileReference; name = "Helvetica Neue LTW0697BlkCnObl.ttf"; path = "../assets/fonts/Helvetica Neue LTW0697BlkCnObl/Helvetica Neue LTW0697BlkCnObl.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BD3B89347D4C4408A10D59FC /* Helvetica Neue Medium Extended.ttf */ = {isa = PBXFileReference; name = "Helvetica Neue Medium Extended.ttf"; path = "../assets/fonts/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		986C8D42EF6A45BB9098277C /* Helvetica Neue UltraLight.ttf */ = {isa = PBXFileReference; name = "Helvetica Neue UltraLight.ttf"; path = "../assets/fonts/Helvetica Neue UltraLight/Helvetica Neue UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9B9228AFA965426BAD29218E /* Helvetica Neue W01 66 Medium It.ttf */ = {isa = PBXFileReference; name = "Helvetica Neue W01 66 Medium It.ttf"; path = "../assets/fonts/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D09A933EF29E4DF9AEAD970C /* Helvetica Neue W01 77 Bd Cn Obl.ttf */ = {isa = PBXFileReference; name = "Helvetica Neue W01 77 Bd Cn Obl.ttf"; path = "../assets/fonts/Helvetica Neue W01 77 Bd Cn Obl/Helvetica Neue W01 77 Bd Cn Obl.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4D85E2AC7CE347068CCA4D99 /* Helvetica Neue W01 87 Hv Cn Obl.ttf */ = {isa = PBXFileReference; name = "Helvetica Neue W01 87 Hv Cn Obl.ttf"; path = "../assets/fonts/Helvetica Neue W01 87 Hv Cn Obl/Helvetica Neue W01 87 Hv Cn Obl.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A8F0FA520A93431B809D997B /* Helvetica NeueLTW0693BlkExtObl.ttf */ = {isa = PBXFileReference; name = "Helvetica NeueLTW0693BlkExtObl.ttf"; path = "../assets/fonts/Helvetica NeueLTW0693BlkExtObl/Helvetica NeueLTW0693BlkExtObl.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 			sourceTree = "<group>";
 		};
 		CE29D58092D14A9AA35CE584 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				6DB70C2BE5504C0A8006F7E9 /* Helvetica Neue LTW0697BlkCnObl.otf */,
 				A9F396DABE944C4290347805 /* Helvetica Neue Medium Extended.otf */,
@@ -196,8 +196,8 @@
 				A8F0FA520A93431B809D997B /* Helvetica NeueLTW0693BlkExtObl.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 

@@ -3,6 +3,7 @@ import { FlatList, View } from 'react-native';
 import SwitchButton from 'switch-button-react-native';
 import color from '../../color';
 import MenuBox, { IMenuBoxItem } from '../../components/MenuBox';
+import MenuPager from '../../components/MenuPager';
 import { COFFEE, MOCKTAIL, SIGNATURE } from '../../constant/MenuBox';
 import styles from './styles';
 
@@ -32,7 +33,13 @@ const Menu = () => {
   }
 
   const renderItem = ({ item }: { item: IMenuBoxItem }) => {
-    return <MenuBox item={item} activeMenuBox={activeMenuBox} />;
+    return (
+      <MenuBox
+        setActiveMenuBox={setActiveMenuBox}
+        item={item}
+        activeMenuBox={activeMenuBox}
+      />
+    );
   };
 
   return (
@@ -42,8 +49,8 @@ const Menu = () => {
           onValueChange={onValueSwitchChange}
           text1="Foods"
           text2="Drinks"
-          switchHeight={50}
-          switchWidth={180}
+          switchHeight={70}
+          switchWidth={240}
           switchBorderRadius={30}
           fontColor={color.grayText}
           activeFontColor={color.black}
@@ -53,13 +60,16 @@ const Menu = () => {
           switchBackgroundColor={color.lightGray}
         />
       </View>
-      <FlatList
-        style={styles.flatList}
-        contentContainerStyle={styles.flatListContent}
-        horizontal
-        data={dataMenu}
-        renderItem={renderItem}
-      />
+      <View>
+        <FlatList
+          style={styles.flatList}
+          contentContainerStyle={styles.flatListContent}
+          horizontal
+          data={dataMenu}
+          renderItem={renderItem}
+        />
+      </View>
+      <MenuPager />
     </View>
   );
 };

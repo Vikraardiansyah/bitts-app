@@ -10,7 +10,13 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          options={{ headerTitleAlign: 'center', headerShadowVisible: false }}
+          options={{
+            headerTitleAlign: 'center',
+            headerShadowVisible: false,
+            headerTitleStyle: {
+              fontSize: 32,
+            },
+          }}
           name="Menu"
           component={Menu}
         />

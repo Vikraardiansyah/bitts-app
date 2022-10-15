@@ -1,3 +1,3 @@
-export const SIGNATURE = 'signature';
-export const MOCKTAIL = 'mocktail';
-export const COFFEE = 'coffee';
+export const SIGNATURE = 'Signature';
+export const MOCKTAIL = 'Mocktail';
+export const COFFEE = 'Coffee';

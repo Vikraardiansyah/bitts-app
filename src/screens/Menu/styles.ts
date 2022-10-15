@@ -3,6 +3,7 @@ import color from '../../color';
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 24,
     flex: 1,
     backgroundColor: color.white,
   },
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
   },
   flatListContent: {
     paddingHorizontal: 32,
-    alignItems: 'flex-start',
+    // alignItems: 'flex-start',
   },
 });
 
