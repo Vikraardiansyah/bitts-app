@@ -1,9 +1,9 @@
 diff --git a/node_modules/switch-button-react-native/SwitchButton.d.ts b/node_modules/switch-button-react-native/SwitchButton.d.ts
 new file mode 100644
-index 0000000..0564be2
+index 0000000..38a80e3
 --- /dev/null
 +++ b/node_modules/switch-button-react-native/SwitchButton.d.ts
-@@ -0,0 +1,22 @@
+@@ -0,0 +1,24 @@
 +import React from 'react';
 +
 +export interface ISwitchButton {
@@ -21,6 +21,8 @@ index 0000000..0564be2
 +  btnBackgroundColor?: string;
 +  activeFontColor?: string;
 +  fontColor?: string;
++  fontSize?: number;
++  fontWeight?: string;
 +  children?: React.ReactNode;
 +}
 +
@@ -28,7 +30,7 @@ index 0000000..0564be2
 +export default SwitchButton;
 \ No newline at end of file
 diff --git a/node_modules/switch-button-react-native/SwitchButton.js b/node_modules/switch-button-react-native/SwitchButton.js
-index 1a9110a..d6d7786 100644
+index 1a9110a..360a19d 100644
 --- a/node_modules/switch-button-react-native/SwitchButton.js
 +++ b/node_modules/switch-button-react-native/SwitchButton.js
 @@ -95,7 +95,7 @@ export default class SwitchButton extends Component {
@@ -107,7 +109,7 @@ index 1a9110a..d6d7786 100644
                                  >
 -                                    <Text style={[ this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
 +                                    <TouchableOpacity activeOpacity={1} onPress={ () => { this._switchThump(this.props.switchdirection || this.state.direction, 1) } }>
-+                                        <Text style={[switchStyles.text, this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
++                                        <Text style={[{ fontSize: this.props.fontSize || 16, fontWeight: this.props.fontWeight }, this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
                                          { this.props.text1 || 'ON' }
 -                                    </Text>
 +                                        </Text>
@@ -128,7 +130,7 @@ index 1a9110a..d6d7786 100644
 -                                    { this.props.text2 || 'OFF' }
 -                                    </Text>
 +                                    <TouchableOpacity activeOpacity={1} onPress={ () => { this._switchThump(this.props.switchdirection || this.state.direction, 2) } }>
-+                                        <Text style={[switchStyles.text, this.state.activeSwitch === 2 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
++                                        <Text style={[{ fontSize: this.props.fontSize || 16, fontWeight: this.props.fontWeight }, this.state.activeSwitch === 2 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
 +                                        { this.props.text2 || 'OFF' }
 +                                        </Text>
 +                                    </TouchableOpacity>
@@ -140,19 +142,17 @@ index 1a9110a..d6d7786 100644
                      { this.props.children } 
                  </View>
  
-@@ -210,9 +216,12 @@ const switchStyles = StyleSheet.create({
+@@ -210,9 +216,8 @@ const switchStyles = StyleSheet.create({
      },
      wayBtnActive: {
          borderWidth: 1,
 -        marginTop: 2,
 -        marginRight: 2,
 -        marginLeft: 2
+-    }
+-
 +        marginTop: 6,
 +        marginRight: 6,
 +        marginLeft: 6
 +    },
-+    text: {
-+        fontSize: 16,
-     }
- 
    });

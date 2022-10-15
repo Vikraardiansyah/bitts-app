@@ -14,7 +14,7 @@ export default function App() {
             headerTitleAlign: 'center',
             headerShadowVisible: false,
             headerTitleStyle: {
-              fontSize: 32,
+              fontSize: 40,
             },
           }}
           name="Menu"

@@ -53,6 +53,8 @@ const Menu = () => {
           switchWidth={240}
           switchBorderRadius={30}
           fontColor={color.grayText}
+          fontSize={24}
+          fontWeight="600"
           activeFontColor={color.black}
           btnBackgroundColor={color.pink}
           btnBorderColor={color.transparent}

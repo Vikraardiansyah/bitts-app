@@ -5,10 +5,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   page: {
-    flex: 1,
     justifyContent: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap',
+  },
+  dotContainer: {
+    alignItems: 'center',
+    marginBottom: 72,
   },
 });
 export default styles;
