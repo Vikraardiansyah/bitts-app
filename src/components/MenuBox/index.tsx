@@ -7,21 +7,26 @@ export interface IMenuBoxItem {
 }
 
 export interface IMenuBox {
-  setActiveMenuBox: React.Dispatch<React.SetStateAction<string>>;
+  setActiveMenuBox: React.Dispatch<React.SetStateAction<number>>;
   item: IMenuBoxItem;
-  activeMenuBox: string;
+  activeMenuBox: number;
 }
 
-const MenuBox = ({ setActiveMenuBox, item, activeMenuBox }: IMenuBox) => {
+const MenuBox = ({
+  index,
+  setActiveMenuBox,
+  item,
+  activeMenuBox,
+}: IMenuBox & { index: number }) => {
   function onPressMenu() {
-    setActiveMenuBox(item.name);
+    setActiveMenuBox(index);
   }
 
   return (
     <Pressable
       onPressOut={onPressMenu}
       style={({ pressed }) => [
-        activeMenuBox === item.name
+        activeMenuBox === index
           ? styles.acticeMenuBox
           : {
               opacity: pressed ? 0.8 : 1,
@@ -30,7 +35,7 @@ const MenuBox = ({ setActiveMenuBox, item, activeMenuBox }: IMenuBox) => {
       ]}>
       <Text
         style={
-          activeMenuBox === item.name
+          activeMenuBox === index
             ? styles.activeMenuText
             : styles.inActiceMenuText
         }>

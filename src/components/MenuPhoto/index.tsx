@@ -1,16 +1,16 @@
 import React from 'react';
 import { ImageBackground, Text } from 'react-native';
-import Image from '../../assets/images';
+import { ListMenu } from '../../data';
 import styles from './styles';
 
-const MenuPhoto = () => {
+const MenuPhoto = ({ menu }: { menu: ListMenu }) => {
   return (
     <ImageBackground
       style={styles.imageContainer}
       imageStyle={styles.image}
       resizeMode="cover"
-      source={Image.coffeeImage}>
-      <Text style={styles.textImage}>Caramel Macchiato</Text>
+      source={menu.image}>
+      <Text style={styles.textImage}>{menu.name}</Text>
     </ImageBackground>
   );
 };

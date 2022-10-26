@@ -4,37 +4,32 @@ import SwitchButton from 'switch-button-react-native';
 import color from '../../color';
 import MenuBox, { IMenuBoxItem } from '../../components/MenuBox';
 import MenuPager from '../../components/MenuPager';
-import { COFFEE, MOCKTAIL, SIGNATURE } from '../../constant/MenuBox';
+import { drinksMenu } from '../../data';
 import styles from './styles';
 
 const MENU = {
-  foods: true,
-  drinks: false,
+  drinks: 1,
+  foods: 2,
 };
 
-const dataMenu = [
-  {
-    name: SIGNATURE,
-  },
-  {
-    name: MOCKTAIL,
-  },
-  {
-    name: COFFEE,
-  },
-];
-
 const Menu = () => {
-  const [menu, setMenu] = useState(MENU.foods);
-  const [activeMenuBox, setActiveMenuBox] = useState(SIGNATURE);
+  const [menu, setMenu] = useState(MENU.drinks);
+  const [activeMenuBox, setActiveMenuBox] = useState(0);
 
-  function onValueSwitchChange() {
-    setMenu(menuValue => !menuValue);
+  function onValueSwitchChange(activeSwitch: number) {
+    setMenu(activeSwitch);
   }
 
-  const renderItem = ({ item }: { item: IMenuBoxItem }) => {
+  const renderItem = ({
+    item,
+    index,
+  }: {
+    item: IMenuBoxItem;
+    index: number;
+  }) => {
     return (
       <MenuBox
+        index={index}
         setActiveMenuBox={setActiveMenuBox}
         item={item}
         activeMenuBox={activeMenuBox}
@@ -47,8 +42,8 @@ const Menu = () => {
       <View style={styles.switch}>
         <SwitchButton
           onValueChange={onValueSwitchChange}
-          text1="Foods"
-          text2="Drinks"
+          text1="Drinks"
+          text2="Foods"
           switchHeight={70}
           switchWidth={240}
           switchBorderRadius={30}
@@ -67,11 +62,13 @@ const Menu = () => {
           style={styles.flatList}
           contentContainerStyle={styles.flatListContent}
           horizontal
-          data={dataMenu}
+          data={menu === 1 ? drinksMenu : []}
           renderItem={renderItem}
         />
       </View>
-      <MenuPager />
+      <MenuPager
+        listMenu={menu === 1 ? drinksMenu[activeMenuBox].listMenu : []}
+      />
     </View>
   );
 };
